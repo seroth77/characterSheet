@@ -1,3 +1,22 @@
 <template>
-  <h1>${message}</h1>
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <require from="./sheet-general/sheet-general"></require>
+  <require from="./sheet-stats/sheet-stats"></require>
+
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="well">
+            <sheet-general></sheet-general>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <sheet-stats></sheet-stats>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
