@@ -14,8 +14,8 @@ describe('General portion of the character sheet', () => {
 
   it('should display an element', done => {
     component.create(bootstrap).then(() => {
-      const nameElement = $('p');
-      expect(nameElement).toBeDefined();
+      const nameElement = $('sheet-general');
+      expect(nameElement.length > 0).toBe(true);
       done();
     });
   });
